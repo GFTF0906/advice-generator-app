@@ -61,6 +61,10 @@ a:focus, a:hover, a:active {
   flex-flow: column wrap;
 }
 
+.hidden {
+  display: none;
+}
+
 .advice__section {
   position: relative; 
   text-align: center;
@@ -92,6 +96,10 @@ a:focus, a:hover, a:active {
   margin: 1rem 0 1.5rem;
 }
 
+.dividers {
+  width: 100%;
+}
+
 .div__mobile {
   display: none;
 }
@@ -119,6 +127,11 @@ a:focus, a:hover, a:active {
 
 .advice__btn:hover, .advice__btn:focus, .advice__btn:active {
   box-shadow: 0 0 1.3rem var(--CLR-PR-NEON-GREEN);
+}
+
+.dice__img {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .footer {
