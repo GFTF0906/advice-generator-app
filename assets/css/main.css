@@ -1,0 +1,163 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* VARIABLES */
+:root {
+  --CLR-PR-LIGHT-CYAN:  hsl(193, 38%, 86%);
+  --CLR-PR-NEON-GREEN: hsl(150, 100%, 66%);
+
+  --CLR-N-GRAYISH-BLUE: hsl(217, 19%, 38%);
+  --CLR-N-DARK-GREYISH-BLUE: hsl(217, 19%, 24%);
+  --CLR-N-DARK-BLUE: hsl(218, 23%, 16%);
+
+  --FT-FAMILY: 'Manrope', sans-serif;
+}
+
+/* RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+button {
+  border: none;
+}
+
+/* GENERAL STYLES */
+html {
+  font-family: var(--FT-FAMILY);
+}
+
+body {
+  position: relative;
+
+  gap: 2rem;
+  min-height: 100vh;
+
+  color: var(--CLR-PR-LIGHT-CYAN);
+  background: var(--CLR-N-DARK-BLUE);
+}
+
+a, a:any-link {
+  text-decoration: none;
+  color: var(--CLR-PR-NEON-GREEN);
+}
+
+a:focus, a:hover, a:active {
+  text-decoration: underline;
+  filter: brightness(110%);
+}
+
+/* CLASSES STYLES */
+.align-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.advice__section {
+  position: relative; 
+  text-align: center;
+
+  max-width: 35rem;
+  max-height: 35rem;
+
+  height: auto;
+  border-radius: 0.5rem;
+
+  padding: 2rem;
+  background: var(--CLR-N-DARK-GREYISH-BLUE);
+}
+
+.advice__id {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.7rem;
+  margin: 0.9rem;
+  color: var(--CLR-PR-NEON-GREEN);
+}
+
+.advice__text {
+  font-size: 1.6rem;
+  margin: 1rem 0.5rem;
+}
+
+.divider {
+  margin: 1rem 0 1.5rem;
+}
+
+.div__mobile {
+  display: none;
+}
+
+.body {
+  height: 1rem; 
+  background-image: url('../images/icon-dice.svg');
+  background-color: #cccccc; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.advice__btn {
+  position: absolute;
+  bottom: -10%;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  padding: 1.2rem;
+
+  background: var(--CLR-PR-NEON-GREEN);
+}
+
+.advice__btn:hover, .advice__btn:focus, .advice__btn:active {
+  box-shadow: 0 0 1.3rem var(--CLR-PR-NEON-GREEN);
+}
+
+.footer {
+  margin: 2rem;
+  bottom: 0;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (min-width: 375px) and (max-width: 420px) {
+  .advice__id {
+    font-size: 0.2rem;
+  }
+
+  .main {
+    margin: 2rem;
+  }
+
+  .advice__section {
+    width: 100%;
+  }
+
+  .advice__text {
+    font-size: 1.2rem;
+  }
+
+  .advice__btn {
+    padding: 1rem;
+  }
+
+  .div__mobile {
+    display: block;
+  }
+
+  .div__desktop {
+    display: none;
+  }
+
+  .attribution {
+    font-size: 1rem;
+  }
+}
+
